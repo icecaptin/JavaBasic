@@ -1,0 +1,25 @@
+package Chapter6;
+
+public class Student4 {
+	private int sid;
+	private String name;
+	private String dept;
+	public Student4() {
+		
+	}
+	public Student4(int sid, String name, String dept) {
+		this.sid = sid; this.name = name; this.dept = dept;
+	}
+	
+	public static void main(String[] args) {
+		System.out.println("6장 시작");
+		int n = 10;
+		Student4 s = null;
+//		s = new Student4();
+		s = new Student4(2023,"양성부", "컴퓨터");
+		System.out.println(s.sid);
+		s.sid = 99;
+		System.out.println("student 객체 = " + s);
+	}
+}
+
