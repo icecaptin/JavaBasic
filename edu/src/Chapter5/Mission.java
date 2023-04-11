@@ -21,4 +21,7 @@ public class Mission {
 
 // && OR
 // || AND
+//250500
+//250000
+//500500
 
