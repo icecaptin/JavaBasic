@@ -33,7 +33,7 @@ class Student_Mission2 {
 		this.sid = sid;
 		this.name = name;
 		this.city = city;
-		countStudents++;
+		countStudents++; 
 	}
 
 	public Student_Mission2() {
