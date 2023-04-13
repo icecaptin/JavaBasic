@@ -8,8 +8,8 @@ abstract class Employee {
 		this.name = name;
 		this.salary = salary;
 	}
-	
-	public abstract void calcSalary(); //부모매서드 /*abstract를 붙이면 추상 : 메소드의 바디를 못가짐 ({~~})*/ //메소드의 바디가 없는 경우
+	/*abstract를 붙이면 추상 : 메소드의 바디를 못가짐*/
+	public abstract void calcSalary(); //부모매서드  //메소드의 바디가 없는 경우
 
 	public abstract void calcBonus();
 }
@@ -59,7 +59,6 @@ abstract class Manager extends Employee { //Employee로부터 상속받음.
 class Director extends Manager { //매니저로부터(부모클래스) 상속받아서 calcSalary를 굳이 구현하지 않아도 자동적으로 구현이 된다. 그래서 일반클래스가 되고 밑에서 new~라고 선언이 가능함.
 	public Director(String name, int salary, int sale) {
 		super(name, salary, sale);
-		// TODO Auto-generated constructor stub
 	}
 
 	public void calcBonus() {
@@ -69,7 +68,7 @@ class Director extends Manager { //매니저로부터(부모클래스) 상속받
 
 public class HRSTest {
 	public static void main(String[] args) {//추상클래스가 아니라 일반클래스라 인스턴스 선언 가능.
-		Salesman sm = new Salesman("Slaesman", 100 , 0);
+		Salesman sm = new Salesman("Salesman", 100 , 0);
 		Consultant con = new Consultant("Consultant", 0, 0);
 		Director dir = new Director("Director", 0, 0);
 		
