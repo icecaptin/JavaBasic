@@ -8,6 +8,8 @@ public class Mission {
 		int fivethousands = 5000;
 		int thousands = 1000;
 		
+		
+		
 		int result1 = (price / fiftythousands);
 		int result1_1 = (price - (result1 *50000)); 
 		System.out.println(result1_1);
